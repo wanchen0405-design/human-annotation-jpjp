@@ -1,0 +1,696 @@
+var imageListByGroup = {
+    "C1": {
+        "category": "us_us",
+        "images": [
+            {
+                "filePath": "stimuli/usdog_uscountryside.jpg",
+                "focal": "usdog",
+                "background": "uscountryside",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usdog_uscity.jpg",
+                "focal": "usdog",
+                "background": "uscity",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usfountain_uscountryside.jpg",
+                "focal": "usfountain",
+                "background": "uscountryside",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usfountain_uscity.jpg",
+                "focal": "usfountain",
+                "background": "uscity",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/uswoman_uscountryside.jpg",
+                "focal": "uswoman",
+                "background": "uscountryside",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/uswoman_uscity.jpg",
+                "focal": "uswoman",
+                "background": "uscity",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usman_uscountryside.jpg",
+                "focal": "usman",
+                "background": "uscountryside",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usman_uscity.jpg",
+                "focal": "usman",
+                "background": "uscity",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usdog_usneighborhood.jpg",
+                "focal": "usdog",
+                "background": "usneighborhood",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usfountain_usneighborhood.jpg",
+                "focal": "usfountain",
+                "background": "usneighborhood",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/usman_usneighborhood.jpg",
+                "focal": "usman",
+                "background": "usneighborhood",
+                "category": "us_us"
+            },
+            {
+                "filePath": "stimuli/uswoman_usneighborhood.jpg",
+                "focal": "uswoman",
+                "background": "usneighborhood",
+                "category": "us_us"
+            } 
+        ]
+    },
+    "C2": {
+        "category": "jp_jp",
+        "images": [
+            {
+                "filePath": "stimuli/jpdog_jpcountryside.jpg",
+                "focal": "jpdog",
+                "background": "jpcountryside",
+                "category": "jp_jp" 
+            },
+            {
+                "filePath": "stimuli/jpdog_jpcity.jpg",
+                "focal": "jpdog",
+                "background": "jpcity",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpfountain_jpcountryside.jpg",
+                "focal": "jpfountain",
+                "background": "jpcountryside",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpfountain_jpcity.jpg",
+                "focal": "jpfountain",
+                "background": "jpcity",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpwoman_jpcountryside.jpg",
+                "focal": "jpwoman",
+                "background": "jpcountryside",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpwoman_jpcity.jpg",
+                "focal": "jpwoman",
+                "background": "jpcity",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpman_jpcountryside.jpg",
+                "focal": "jpman",
+                "background": "jpcountryside",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpman_jpcity.jpg",
+                "focal": "jpman",
+                "background": "jpcity",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpfountain_jpyard.jpg",
+                "focal": "jpfountain",
+                "background": "jpyard",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpdog_jpyard.jpg",
+                "focal": "jpdog",
+                "background": "jpyard",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpman_jpyard.jpg",
+                "focal": "jpman",
+                "background": "jpyard",
+                "category": "jp_jp"
+            },
+            {
+                "filePath": "stimuli/jpwoman_jpyard.jpg",
+                "focal": "jpwoman",
+                "background": "jpyard",
+                "category": "jp_jp"
+            }
+        ]
+    },
+    "C3": {
+        "category": "us_jp",
+        "images": [
+            {
+                "filePath": "stimuli/usdog_jpcountryside.jpg",
+                "focal": "usdog",
+                "background": "jpcountryside",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usdog_jpcity.jpg",
+                "focal": "usdog",
+                "background": "jpcity",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usfountain_jpcountryside.jpg",
+                "focal": "usfountain",
+                "background": "jpcountryside",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usfountain_jpcity.jpg",
+                "focal": "usfountain",
+                "background": "jpcity",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/uswoman_jpcountryside.jpg",
+                "focal": "uswoman",
+                "background": "jpcountryside",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/uswoman_jpcity.jpg",
+                "focal": "uswoman",
+                "background": "jpcity",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usman_jpcountryside.jpg",
+                "focal": "usman",
+                "background": "jpcountryside",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usman_jpcity.jpg",
+                "focal": "usman",
+                "background": "jpcity",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usman_jpyard.jpg",
+                "focal": "usman",
+                "background": "jpyard",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/uswoman_jpyard.jpg",
+                "focal": "uswoman",
+                "background": "jpyard",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usfountain_jpyard.jpg",
+                "focal": "usfountain",
+                "background": "jpyard",
+                "category": "us_jp"
+            },
+            {
+                "filePath": "stimuli/usdog_jpyard.jpg",
+                "focal": "usdog",
+                "background": "jpyard",
+                "category": "us_jp"
+            }
+        ]
+    },
+    "C4": {
+        "category": "jp_us",
+        "images": [
+            {
+                "filePath": "stimuli/jpdog_uscountryside.jpg",
+                "focal": "jpdog",
+                "background": "uscountryside",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpdog_uscity.jpg",
+                "focal": "jpdog",
+                "background": "uscity",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpfountain_uscountryside.jpg",
+                "focal": "jpfountain",
+                "background": "uscountryside",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpfountain_uscity.jpg",
+                "focal": "jpfountain",
+                "background": "uscity",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpwoman_uscountryside.jpg",
+                "focal": "jpwoman",
+                "background": "uscountryside",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpwoman_uscity.jpg",
+                "focal": "jpwoman",
+                "background": "uscity",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpman_uscountryside.jpg",
+                "focal": "jpman",
+                "background": "uscountryside",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpman_uscity.jpg",
+                "focal": "jpman",
+                "background": "uscity",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpman_usneighborhood.jpg",
+                "focal": "jpman",
+                "background": "usneighborhood",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpwoman_usneighborhood.jpg",
+                "focal": "jpwoman",
+                "background": "usneighborhood",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpfountain_usneighborhood.jpg",
+                "focal": "jpfountain",
+                "background": "usneighborhood",
+                "category": "jp_us"
+            },
+            {
+                "filePath": "stimuli/jpdog_usneighborhood.jpg",
+                "focal": "jpdog",
+                "background": "usneighborhood",
+                "category": "jp_us"
+            }
+        ]
+    },
+    "C5": {
+        "category": "us_nt",
+        "images": [
+            {
+                "filePath": "stimuli/usdog_ntpond.jpg",
+                "focal": "usdog",
+                "background": "ntpond",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usdog_ntapt.jpg",
+                "focal": "usdog",
+                "background": "ntapt",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usdog_ntforest.jpg",
+                "focal": "usdog",
+                "background": "ntforest",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usfountain_ntpond.jpg",
+                "focal": "usfountain",
+                "background": "ntpond",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usfountain_ntapt.jpg",
+                "focal": "usfountain",
+                "background": "ntapt",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usfountain_ntforest.jpg",
+                "focal": "usfountain",
+                "background": "ntforest",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/uswoman_ntpond.jpg",
+                "focal": "uswoman",
+                "background": "ntpond",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/uswoman_ntapt.jpg",
+                "focal": "uswoman",
+                "background": "ntapt",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/uswoman_ntforest.jpg",
+                "focal": "uswoman",
+                "background": "ntforest",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usman_ntpond.jpg",
+                "focal": "usman",
+                "background": "ntpond",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usman_ntapt.jpg",
+                "focal": "usman",
+                "background": "ntapt",
+                 "category": "us_nt"
+            },
+            {
+                "filePath": "stimuli/usman_ntforest.jpg",
+                "focal": "usman",
+                "background": "ntforest",
+                 "category": "us_nt"
+            }
+        ]
+    },
+    "C6": {
+        "category": "jp_nt",
+        "images": [
+            {
+                "filePath": "stimuli/jpdog_ntpond.jpg",
+                "focal": "jpdog",
+                "background": "ntpond",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpdog_ntapt.jpg",
+                "focal": "jpdog",
+                "background": "ntapt",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpdog_ntforest.jpg",
+                "focal": "jpdog",
+                "background": "ntforest",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpfountain_ntpond.jpg",
+                "focal": "jpfountain",
+                "background": "ntpond",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpfountain_ntapt.jpg",
+                "focal": "jpfountain",
+                "background": "ntapt",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpfountain_ntforest.jpg",
+                "focal": "jpfountain",
+                "background": "ntforest",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpwoman_ntpond.jpg",
+                "focal": "jpwoman",
+                "background": "ntpond",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpwoman_ntapt.jpg",
+                "focal": "jpwoman",
+                "background": "ntapt",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpwoman_ntforest.jpg",
+                "focal": "jpwoman",
+                "background": "ntforest",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpman_ntpond.jpg",
+                "focal": "jpman",
+                "background": "ntpond",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpman_ntapt.jpg",
+                "focal": "jpman",
+                "background": "ntapt",
+                "category": "jp_nt"
+            },
+            {
+                "filePath": "stimuli/jpman_ntforest.jpg",
+                "focal": "jpman",
+                "background": "ntforest",
+                "category": "jp_nt"
+            }
+       
+        ]
+    },
+    "C7": {
+        "category": "nt_us",
+        "images": [
+            {
+                "filePath": "stimuli/ntdog_uscountryside.jpg",
+                "focal": "ntdog",
+                "background": "uscountryside",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntdog_uscity.jpg",
+                "focal": "ntdog",
+                "background": "uscity",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntbike_uscountryside.jpg",
+                "focal": "ntbike",
+                "background": "uscountryside",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntbike_uscity.jpg",
+                "focal": "ntbike",
+                "background": "uscity",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntbench_uscountryside.jpg",
+                "focal": "ntbench",
+                "background": "uscountryside",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntbench_uscity.jpg",
+                "focal": "ntbench",
+                "background": "uscity",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntcamera_uscountryside.jpg",
+                "focal": "ntcamera",
+                "background": "uscountryside",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntcamera_uscity.jpg",
+                "focal": "ntcamera",
+                "background": "uscity",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntdog_usneighborhood.jpg",
+                "focal": "ntdog",
+                "background": "usneighborhood",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntbike_usneighborhood.jpg",
+                "focal": "ntbike",
+                "background": "usneighborhood",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntbench_usneighborhood.jpg",
+                "focal": "ntbench",
+                "background": "usneighborhood",
+                 "category": "nt_us"
+            },
+            {
+                "filePath": "stimuli/ntcamera_usneighborhood.jpg",
+                "focal": "ntcamera",
+                "background": "usneighborhood",
+                 "category": "nt_us"
+            }
+        ]
+    },  
+    "C8": {
+        "category": "nt_jp",
+        "images": [
+            {
+                "filePath": "stimuli/ntdog_jpcountryside.jpg",
+                "focal": "ntdog",
+                "background": "jpcountryside",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntdog_jpcity.jpg",
+                "focal": "ntdog",
+                "background": "jpcity",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntbike_jpcountryside.jpg",
+                "focal": "ntbike",
+                "background": "jpcountryside",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntbike_jpcity.jpg",
+                "focal": "ntbike",
+                "background": "jpcity",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntbench_jpcountryside.jpg",
+                "focal": "ntbench",
+                "background": "jpcountryside",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntbench_jpcity.jpg",
+                "focal": "ntbench",
+                "background": "jpcity",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntcamera_jpcountryside.jpg",
+                "focal": "ntcamera",
+                "background": "jpcountryside",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntcamera_jpcity.jpg",
+                "focal": "ntcamera",
+                "background": "jpcity",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntcamera_jpyard.jpg",
+                "focal": "ntcamera",
+                "background": "jpyard",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntdog_jpyard.jpg",
+                "focal": "ntdog",
+                "background": "jpyard",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntbench_jpyard.jpg",
+                "focal": "ntbench",
+                "background": "jpyard",
+                "category": "nt_jp"
+            },
+            {
+                "filePath": "stimuli/ntbike_jpyard.jpg",
+                "focal": "ntbike",
+                "background": "jpyard",
+                "category": "nt_jp"
+            }
+        ]
+    },
+    "C9": {
+        "category": "nt_nt",
+        "images": [
+            {
+                "filePath": "stimuli/ntdog_ntpond.jpg",
+                "focal": "ntdog",
+                "background": "ntpond",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntdog_ntapt.jpg",
+                "focal": "ntdog",
+                "background": "ntapt",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntdog_ntforest.jpg",
+                "focal": "ntdog",
+                "background": "ntforest",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntbike_ntpond.jpg",
+                "focal": "ntbike",
+                "background": "ntpond",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntbike_ntapt.jpg",
+                "focal": "ntbike",
+                "background": "ntapt",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntbike_ntforest.jpg",
+                "focal": "ntbike",
+                "background": "ntforest",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntbench_ntpond.jpg",
+                "focal": "ntbench",
+                "background": "ntpond",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntbench_ntapt.jpg",
+                "focal": "ntbench",
+                "background": "ntapt",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntbench_ntforest.jpg",
+                "focal": "ntbench",
+                "background": "ntforest",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntcamera_ntpond.jpg",
+                "focal": "ntcamera",
+                "background": "ntpond",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntcamera_ntapt.jpg",
+                "focal": "ntcamera",
+                "background": "ntapt",
+                "category": "nt_nt"
+            },
+            {
+                "filePath": "stimuli/ntcamera_ntforest.jpg",
+                "focal": "ntcamera",
+                "background": "ntforest",
+                "category": "nt_nt"
+            }
+        ]
+    }
+}
