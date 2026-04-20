@@ -6,7 +6,7 @@ var config_deploy = {
     // you receive the experimentID when you create the experiment using the _babe server app
     // "experimentID": "100",
     // // if you use the _babe server app, specify its URL here
-    "experimentID": "en-description-us-annotation.json",
+    "experimentID": "en-description-us-annotation-jp-sample.json",
     "serverAppURL": "https://description-en-default-rtdb.firebaseio.com/",
 
     // set deployment method; use one of:
