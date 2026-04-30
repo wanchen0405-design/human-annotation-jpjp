@@ -855,7 +855,7 @@ var thanks = {
                 Mustache.render(viewTemplate, {
                     thanksMessage: this.message,
                     extraMessage:
-                        "Prolificで実験を完了したことを確認するため、下のボタンを押してください。あなたの完了コードは C11UVM4K です。<br />" +
+                        "Prolificで実験を完了したことを確認するため、下のボタンを押してください。あなたの完了コードは C18RZW3G です。<br />" +
                         "<a href=" +
                         config_deploy.prolificURL +
                         ' class="prolific-url">確認</a>'
