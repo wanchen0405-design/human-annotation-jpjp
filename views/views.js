@@ -1,54 +1,46 @@
 // informed consent page
 var informed_consent = {
-    name: "informed_consent",
-    title: "Consent to Participate in Research",
+    name: "研究参加同意書",
+    title: "研究参加同意書",
     consent_text:
-        "<p>Dr. Elisa Kreiss, from the Communication Department at the University of California, Los Angeles is conducting a research study. This study is being funded by The Society of Hellman Fellows Program. You were selected as a possible participant in this study because you are 18 years of age or older. Your participation in this research study is voluntary.</p>" +
+        "<p>研究者名：カリフォルニア大学ロサンゼルス校（UCLA）のエリサ・クライス教授（Dr. Elisa Kreiss）</p>" +
+        "<p>資金提供：シェルマンフェローズ・プログラム（The Society of Hellman Fellows Program）</p>" +
+        "<p>対象者：18 歳以上の方</p>" +
         "<br>"+
-        "<p><strong>WHAT SHOULD I KNOW ABOUT A RESEARCH STUDY?</strong></p>" +
-        "<p>The research study will be explained to you.</p>" +
-        "<p>Whether or not you take part is up to you.</p>" +
-        "<p>You can choose not to take part.</p>" +
-        "<p>You can agree to take part and later change your mind.</p>" +
-        "<p>Your decision will not be held against you.</p>" +
+        "<p><strong>この研究について知っておくべきこと</strong></p>" +
+        "<p>研究内容は説明されます</p>" +
+        "<p>参加は任意です</p>" +
+        "<p>同意後でも途中でやめることができます</p>" +
+        "<p>参加・不参加の決定によって不利益を受けることはありません</p>" +
+        "<p>質問があれば、事前に何でも聞いてください</p>" +
+        "<p>答えたくない質問には答えなくても、研究への参加は継続できます</p>" +
         "<br>"+
-        "<p><strong>WHY IS THIS RESEARCH BEING DONE?</strong></p>" +
-        "<p>The purpose of the research is to understand how people evaluate visual scenes. By studying the ways people evaluate images, we can gain insights into human communication and how people process what they see.</p>" +
+        "<p><strong>研究の目的</strong></p>" +
+        "<p>この研究は、人々が視覚的なシーンをどのように捉え、評価するのかを理解することを目的としています。画像の見方や感じ方を調べることで、人間のコミュニケーションの仕組みや視覚情報の処理について、より深い理解が得られると考えられます。</p>" +
         "<br>"+
-        "<p><strong>HOW LONG WILL THE RESEARCH LAST AND WHAT WILL I NEED TO DO?</strong></p>" +
-        "<p>Participation will take a total of about 5 minutes. You will be asked to view a few images and select parts of the image descriptions according to the instructions. Afterwards, you will also respond to a few brief post-survey questions.</p>" +
+        "<p><strong>研究の所要時間と手順</strong></p>" +
+        "<p>参加には合計で約5分かかります</p>" +
+        "<p>いくつかの画像を見て、指示に従って画像説明文の一部を選択していただきます</p>" +
+        "<p>その後、簡単な事後アンケートの質問にいくつか回答していただきます</p>" +
         "<br>"+
-        "<p><strong>ARE THERE ANY RISKS IF I PARTICIPATE?</strong></p>" +
-        "<p>There are no anticipated risks or discomforts.</p>" +
+        "<p><strong>参加によるリスク</strong></p>" +
+        "<p>参加により、予期されるリスクや不快感はありません</p>" +
         "<br>"+
-        "<p><strong>ARE THERE ANY BENEFITS IF I PARTICIPATE?</strong></p>" +
-        "<p>You will not directly benefit from your participation in the research. However, your participation may help researchers better understand how people view images and how this knowledge can be applied in future research.</p>" +
-        "<p><strong>What other choices do I have if I choose not to participate?</strong></p>" +
-        "<p>Your alternative to participating in this research study is to not participate.</p>" +
+        "<p><strong>参加による利益</strong></p>" +
+        "<p> 直接的な利益はありませんが、あなたの参加は今後の研究に役立つ可能性があります</p>" +
         "<br>"+
-        "<p><strong>HOW WILL INFORMATION ABOUT ME AND MY PARTICIPATION BE KEPT CONFIDENTIAL?</strong></p>" +
-        "<p>The researchers will do their best to ensure that your private information is kept confidential. Information about you will be handled as confidentially as possible, but participating in research may involve a loss of privacy and the potential for a breach in confidentiality. Study data will be physically and electronically secured. As with any use of electronic means to store data, there is a risk of breach of data security.</p>" +
-        "<p><strong>Use of personal information that can identify you:</strong> We will not collect any personal information that could identify you.</p>" +
-        "<p><strong>How information about you will be stored:</strong> Any data collected as part of this study will be stored in a safe and secure location. An anonymized version of the study data may be distributed to facilitate replication of the work and follow-up work.</p>" +
-        "<p><strong>People and agencies that will have access to your information:</strong><br>The research team, authorized UCLA personnel, and the study sponsor may have access to study data and records to monitor the study. Research records provided to authorized, non-UCLA personnel will not contain identifiable information about you. Publications and/or presentations that result from this study will not identify you by name.<br>" +
-        "Employees of the University may have access to identifiable information as part of routine processing of your information, such as lab work or processing payment.<br>" +
-        "However, University employees are bound by strict rules of confidentiality.<br></p>" +
-        "<p><strong>How long information from the study will be kept:</strong> Anonymized data from the study will remain available indefinitely.</p>" +
+        "<p><strong>プライバシー保護個人情報の取り扱い</strong></p>" +
+        "<p>個人を特定できる情報は収集しません</p>" +
+        "<p>収集されたデータは安全な場所に保管されます</p>" +
+        "<p>匿名化されたデータは、研究の再現や追跡研究のために共有される可能性があります</p>" +
+        "<p>研究チーム、UCLAの認可を受けた職員、研究スポンサーがデータにアクセスする可能性があります</p>" +
+        "<p>公表される研究成果にあなたの名前が記載されることはありません</p>"+
+        "<p>大学職員が処理の過程で情報にアクセスする場合がありますが、厳格な守秘義務があります</p>" +
+        "<p>匿名化されたデータは無期限に保管されます</p>" +
         "<br>"+
-        "<p><strong>USE OF DATA FOR FUTURE RESEARCH</strong></p>" +
-        "<p>Your data, including de-identified data may be kept for use in future research. The descriptions written in this study will likely be shown (fully anonymized) to other participants in subsequent studies.</p>" +
-        "<br>"+
-        "<p><strong>WHO CAN I CONTACT IF I HAVE QUESTIONS ABOUT THIS STUDY?</strong></p>" +
-        "<p><strong>The research team:</strong> If you have any questions, comments or concerns about the research, you can talk to one of the researchers. Please contact: Dr. Elisa Kreiss at ekreiss@ucla.edu, or by phone at (310) 825-1703.</p>" +
-        "<p><strong>UCLA Office of the Human Research Protection Program (OHRPP):</strong> If you have questions about your rights as a research participant, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</p>" +
-        "<br>"+
-        "<p><strong>WHAT ARE MY RIGHTS IF I TAKE PART IN THIS STUDY?</strong></p>" +
-        "<p>You can choose whether or not you want to be in this study, and you may withdraw your consent and discontinue participation at any time.</p>" +
-        "<p>Whatever decision you make, there will be no penalty to you, and no loss of benefits to which you were otherwise entitled.</p>" +
-        "<p>You may refuse to answer any questions that you do not want to answer and still remain in the study.</p>" +
-        "<br>"+
-        "<p><strong>WHY SHOULD I CONSENT TO PARTICIPATE?</strong></p>" +
-        "<p>If you consent to participate, you will be helping us understand how people evaluate visual scenes. Your participation is voluntary, and you are free to withdraw at any time. Your decision will not be held against you.</p>",
+        "<p><strong>連絡先</strong></p>" +
+        "<p><strong>研究に関するお問い合わせ：</strong> 研究に関して質問や意見・不安がある場合は、研究チームまでご連絡ください: エリサ・クライス教授（Dr. Elisa Kreiss）へは、メール（ekreiss@ucla.edu）または電話（310-825-1703）でご連絡いただけます。</p>" +
+        "<p><strong> 研究参加者としての権利に関するお問い合わせ：</strong> カリフォルニア大学ロサンゼルス校人間研究保護プログラム（UCLA OHRPP）電話：(310) 206-2040、メール：participants@research.ucla.edu、郵送：Box 951406, Los Angeles, CA 90095-1406</p>",
     render: function() {
         var viewTemplate = $("#informed-consent-view").html();
         
@@ -110,11 +102,14 @@ var informed_consent = {
 var intro = {
     name: "intro",
     // introduction title
-    title: "Introduction", 
+    title: "説明", 
     // introduction text
     text:
-        "<p>Hi and welcome to the study!</p><br><p>In the following section, you will see <strong>5 photos</strong>, each paired with a description written by someone else. You will be asked to <strong>highlight parts of the description</strong> based on the instructions shown at each step. Please read the instructions carefully and highlight the text according to the instructions.</p><br><p>Afterward, you will answer two brief questions about where you live and what languages you speak.</p><br><p>When you are ready, please enter your Prolific ID below and then click the button to begin.</p>",
-    buttonText: "Begin experiment",
+    "<p>こんにちは。本研究へようこそ！</p><br>" +
+    "<p>次のセクションでは、<strong>5枚の写真</strong>が表示され、それぞれに他の人が書いた説明文が付いています。各ステップに表示される指示に基づいて、<strong>説明文の一部をハイライト</strong>していただきます。指示をよく読み、指示に従ってテキストをハイライトしてください。</p><br>" +
+    "<p>その後、お住まいの地域と言語に関する簡単な質問に2つ回答していただきます。</p><br>" +
+    "<p>準備ができましたら、下にProlific IDを入力し、ボタンをクリックして調査を開始してください。</p>",
+    buttonText: "実験を開始する",
     // render function renders the view
     render: function() {
         var viewTemplate = $("#intro-view").html();
@@ -181,8 +176,8 @@ var main = {
                 image_path: filePath,
                 trial_number: CT + 1,
                 total_trials: this.trials,
-                phase_title: "Step 1/3",
-                instruction: "Step 1: Look at the image and then highlight in the text description what you consider to be the <strong>main subject/object</strong> of the image."
+                phase_title: "ステップ1/3",
+                instruction: "ステップ1：画像を見てから、説明文の中で、画像の<strong>主要な被写体／対象物</strong>だと思う部分をハイライトしてください。"
             })
         );
 
@@ -223,19 +218,19 @@ var main = {
             $("#phase-3-panel").toggle(step === 3);
             $("#phase-4-panel").toggle(step === 4);
 
-            var phaseTitle = step === 1 ? "Step 1/3" : step === 2 ? "Step 2/3" : step === 3 ? "Step 3/3" : "Review";
+            var phaseTitle = step === 1 ? "ステップ1/3" : step === 2 ? "ステップ2/3" : step === 3 ? "ステップ3/3" : "最終確認";
             var instruction = "";
             if (step === 1) {
-                instruction = "Step 1: Look at the image and then highlight in the text description what you consider to be the <strong>main subject/object</strong> of the image.";
+                instruction = "ステップ1：画像を見てから、説明文の中で、画像の<strong>主要な被写体／対象物</strong>だと思う部分をハイライトしてください。";
             } else if (step === 2) {
-                instruction = "Step 2: Highlight <strong>all</strong> parts of the description that both mention and in any way describe the <strong>main subject/object</strong>.";
+                instruction = "ステップ2：説明文の中で、<strong>主要な被写体／対象物</strong>に言及し、かつ何らかの形で説明している部分を<strong>すべて</strong>ハイライトしてください。";
             } else if (step === 3) {
-                instruction = "Highlight <strong>all</strong> parts of the description that either mention or in any way describe the <strong>background</strong> of the image (i.e., visual details that are <strong>not</strong> the main subject/object).";
+                instruction = "説明文の中で、画像の<strong>背景</strong>（つまり、<strong>主要な被写体／対象物ではない</strong>視覚的な詳細）に言及している、または何らかの形で説明している部分を<strong>すべて</strong>ハイライトしてください。";
             } else {
-                instruction = "Review: Texts in black are ones you have not yet highlighted. Please highlight <strong>all</strong> texts mentioning and describing the <strong>main subject/object</strong> and the <strong>background</strong>.";
+                instruction = "確認：黒色のテキストは、まだハイライトされていない部分です。<strong>主要な被写体／対象物</strong>および<strong>背景</strong>に言及している、またはそれらを説明しているテキストを<strong>すべて</strong>ハイライトしてください。";
             }
 
-            $(".view .question").first().text("Trial " + (CT + 1) + " of " + main.trials + ": " + phaseTitle);
+            $(".view .question").first().text("試行 " + (CT + 1) + " / " + main.trials + "：" + phaseTitle);
             $(".question-box .question").html(instruction);
 
             if (step === 4) {
@@ -391,7 +386,7 @@ var main = {
             selections.forEach(function(sel, index) {
                 var li = $("<li></li>");
                 li.text(sel + " ");
-                var removeBtn = $("<button type='button'>Remove</button>");
+                var removeBtn = $("<button type='button'>削除</button>");
                 removeBtn.on("click", function() {
                     selections.splice(index, 1);
                     if (ranges) {
@@ -420,9 +415,9 @@ var main = {
                     .concat(highlightRanges.background)
             );
             for (var i = 0; i < baseText.length; i++) {
-                // Ignore whitespace and punctuation; only count letter/number characters
-                // when deciding whether meaningful description text remains unhighlighted.
-                if (!/[A-Za-z0-9]/.test(baseText.charAt(i))) {
+                // Ignore whitespace and punctuation; count any Unicode letter/number
+                // so this works for Japanese and other non-Latin scripts as well.
+                if (!/[\p{L}\p{N}]/u.test(baseText.charAt(i))) {
                     continue;
                 }
                 var alreadyHighlighted = previousRanges.some(function(r) {
@@ -433,6 +428,14 @@ var main = {
                 }
             }
             return false;
+        };
+
+        var hasAnyHighlightsInFirstThreeSteps = function() {
+            return (
+                highlightRanges.step1.length > 0 ||
+                highlightRanges.focal.length > 0 ||
+                highlightRanges.background.length > 0
+            );
         };
 
         var finalizeTrial = function(step4Skipped) {
@@ -502,7 +505,7 @@ var main = {
             var containerEl = $("#description-block-step1")[0];
             var selectionRange = getSelectionRangeWithin(containerEl);
             if (!selectionRange) {
-                alert("Please highlight text inside the description first.");
+                alert("まず、説明文内のテキストをハイライトしてください。");
                 return;
             }
             if (response.selected_main_object_spans.includes(selectionRange.text)) {
@@ -528,7 +531,7 @@ var main = {
             var containerEl = $("#description-block-focal")[0];
             var selectionRange = getSelectionRangeWithin(containerEl);
             if (!selectionRange) {
-                alert("Please highlight text inside the description first.");
+                alert("まず、説明文内のテキストをハイライトしてください。");
                 return;
             }
             var selectedText = selectionRange.text;
@@ -555,7 +558,7 @@ var main = {
             var containerEl = $("#description-block-background")[0];
             var selectionRange = getSelectionRangeWithin(containerEl);
             if (!selectionRange) {
-                alert("Please highlight text inside the description first.");
+                alert("まず、説明文内のテキストをハイライトしてください。");
                 return;
             }
             var selectedText = selectionRange.text;
@@ -645,7 +648,7 @@ var main = {
             if (phaseIndex === 1) {
                 var step1Na = $("#na-step1").is(":checked");
                 if (!step1Na && response.selected_main_object_spans.length === 0) {
-                    $("#error").text("Highlight at least one text span that identifies the main subject/object, or check N/A if none applies.").show();
+                    $("#error").text("主要な被写体／対象物を示しているテキストをハイライトしてください。該当するものがない場合は、チェックボックスにチェックを入れてください。").show();
                     $("#error").show();
                     return;
                 }
@@ -659,7 +662,7 @@ var main = {
             if (phaseIndex === 2) {
                 var focalNa = $("#na-focal").is(":checked");
                 if (!focalNa && response.selected_focal_sentences.length === 0) {
-                    $("#error").text("Please highlight texts which describe the main subject/object, or check the box if none applies.").show();
+                    $("#error").text("主要な被写体／対象物を説明しているテキストをハイライトするか、該当するものがない場合はチェックボックスにチェックを入れてください。").show();
                     return;
                 }
                 response.focal_description_na = focalNa;
@@ -672,12 +675,15 @@ var main = {
             if (phaseIndex === 3) {
                 var backgroundNa = $("#na-background").is(":checked");
                 if (!backgroundNa && response.selected_background_sentences.length === 0) {
-                    $("#error").text("Please highlight texts which describe the background, or check the box if none applies.").show();
+                    $("#error").text("背景を説明しているテキストをハイライトしてください。該当するものがない場合は、チェックボックスにチェックを入れてください。").show();
                     return;
                 }
                 response.background_description_na = backgroundNa;
                 phaseTiming.step_3_seconds = (now - phaseStartTime) / 1000;
-                if (!hasUnhighlightedTextAfterFirstThreeSteps()) {
+                var shouldShowReviewStep =
+                    !hasAnyHighlightsInFirstThreeSteps() ||
+                    hasUnhighlightedTextAfterFirstThreeSteps();
+                if (!shouldShowReviewStep) {
                     response.review_complete_checked = true;
                     phaseTiming.step_4_seconds = 0;
                     finalizeTrial(true);
@@ -694,7 +700,7 @@ var main = {
                     response.additional_focal_sentences.length > 0 ||
                     response.additional_background_sentences.length > 0;
                 if (!reviewComplete && !hasAdditionalSelections) {
-                    $("#error").text("You have not select anything yet, or check that remaining text is neither main object-related nor background-related.").show();
+                    $("#error").text("まだ何も選択されていません。続行するには、テキストを選択するか、「残りのテキストは主要な対象物にも背景にも関連していない」にチェックを入れてください。").show();
                     return;
                 }
                 response.review_complete_checked = reviewComplete;
@@ -710,8 +716,8 @@ var main = {
 
 var postTest = {
     name: "postTest",
-    title: "Post-Survey Questions",
-    buttonText: "Continue",
+    title: "事後アンケート",
+    buttonText: "続行",
     render: function() {
         var viewTemplate = $("#post-test-view").html();
         $("#main").html(
@@ -828,7 +834,7 @@ var demographics = {
 
 var thanks = {
     name: "thanks",
-    message: "Thank you for taking part in this experiment!",
+    message: "本実験にご参加いただき、ありがとうございました！",
     render: function() {
         var viewTemplate = $("#thanks-view").html();
 
@@ -849,10 +855,10 @@ var thanks = {
                 Mustache.render(viewTemplate, {
                     thanksMessage: this.message,
                     extraMessage:
-                        "Please press the button below to confirm that you completed the experiment with Prolific. Your completion code is C11UVM4K.<br />" +
+                        "Prolificで実験を完了したことを確認するため、下のボタンを押してください。あなたの完了コードは C11UVM4K です。<br />" +
                         "<a href=" +
                         config_deploy.prolificURL +
-                        ' class="prolific-url">Confirm</a>'
+                        ' class="prolific-url">確認</a>'
                 })
             );
         } else if (config_deploy.deployMethod === "debug") {

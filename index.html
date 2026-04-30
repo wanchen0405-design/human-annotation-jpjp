@@ -58,25 +58,25 @@
                 </section>
                 <br>
                 <div class="consent-options">
-                    <p><strong>Please select one of the following options:</strong></p>
+                    <p><strong>次の選択肢から1つ選んでください:</strong></p>
                     <div class="consent-checkbox">
                         <input type="radio" id="consent-yes" name="consent" value="yes">
-                        <label for="consent-yes">I confirm that I am 18 years old and above, and would like to participate in the study.</label>
+                        <label for="consent-yes">私は18歳以上であり、本研究への参加を希望します。</label>
                     </div>
                     <div class="consent-checkbox">
                         <input type="radio" id="consent-no" name="consent" value="no">
-                        <label for="consent-no">No, I do not wish to participate.</label>
+                        <label for="consent-no">いいえ、参加を希望しません。</label>
                     </div>
                 </div>
                 <br>
-                <button id="next" disabled>Continue</button>
+                <button id="next" disabled>次へ</button>
             </div>
         </script>
 
         <!-- Introduction view -->
         <script id="intro-view" type="text/html">
             <div class='view'>
-                <h1 class="view-title">Instructions</h1>
+                <h1 class="view-title">説明</h1>
                 <br>
                 {{# text }}
                 <section class="text-container">
@@ -85,7 +85,7 @@
                 {{/ text }}
                 <br>
                 <p id="prolific-id-form">
-                    <label for="prolific-id">Please enter your Prolific ID</label>
+                    <label for="prolific-id">Prolific ID をご入力ください</label>
                     <input type="text" id="prolific-id" />
                 </p>
                 {{# button }}
@@ -109,7 +109,7 @@
         <script id="main-view" type="text/html">
             <div class="view">
                 <p class="question" style="font-weight: 700; margin-bottom: 16px;">
-                    Trial {{ trial_number }} of {{ total_trials }}: {{ phase_title }}
+                    試行 {{ trial_number }} / {{ total_trials }}：{{ phase_title }}
                 </p>
 
                 {{# image_path }}
@@ -123,69 +123,69 @@
                 </div>
 
                 <div id="phase-1-panel" style="display:none; max-width: 750px; margin: 0 auto;">
-                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">Image description:</p>
+                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">画像説明文:</p>
                     <div id="description-block-step1" style="max-width: 650px; margin: 0 auto 8px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; text-align: left; user-select: text;"></div>
                     <label style="display:block; max-width: 650px; margin: 0 auto 10px; text-align:left;">
                         <input type="checkbox" id="na-step1" />
-                        The description does not mention the main subject/object.
+                        説明文では、主要な被写体／対象物について言及または説明されていません。
                     </label>
 
                     <p style="max-width: 650px; margin: 0 auto 10px; text-align: left; font-style: italic; color: #777; font-size: 15px; line-height: 1.4;">
-                        Note: The main subject/object is the most central and obvious object/subject in the image.
+                        注：主要な被写体／対象物とは、画像の中で最も中心的で、明らかに目立つ被写体または物体を指します。
                     </p>
-                    <button id="add-selection-step1" type="button" style="margin-bottom: 8px;">Add highlighted text</button>
+                    <button id="add-selection-step1" type="button" style="margin-bottom: 8px;">ハイライトしたテキストを追加してください</button>
                     <ul id="selection-list-step1" style="text-align: left; max-width: 650px; margin: 0 auto; padding-left: 20px; box-sizing: border-box;"></ul>
                 </div>
 
                 <div id="phase-2-panel" style="display:none; max-width: 750px; margin: 0 auto;">
-                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">Image description:</p>
+                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">画像説明文:</p>
                     <div id="description-block-focal" style="max-width: 650px; margin: 0 auto 8px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; text-align: left; user-select: text;"></div>
                     <label style="display:block; max-width: 650px; margin: 0 auto 10px; text-align:left;">
                         <input type="checkbox" id="na-focal" />
-                        The description does not mention or describe the main subject/object.
+                        説明文では、主要な被写体／対象物について言及または説明されていません。
                     </label>
 
                     <p style="max-width: 650px; margin: 0 auto 10px; text-align: left; font-style: italic; color: #777; font-size: 15px; line-height: 1.4;">
-                        Note: The main subject/object is the most central and obvious object/subject in the image.
+                        注：主要な被写体／対象物とは、画像の中で最も中心的で、明らかに目立つ被写体または物体を指します。
                     </p>
-                    <button id="add-selection-focal" type="button" style="margin-bottom: 8px;">Add highlighted text</button>
+                    <button id="add-selection-focal" type="button" style="margin-bottom: 8px;">ハイライトしたテキストを追加してください</button>
                     <ul id="selection-list-focal" style="text-align: left; max-width: 650px; margin: 0 auto; padding-left: 20px; box-sizing: border-box;"></ul>
                 </div>
 
                 <div id="phase-3-panel" style="display:none; max-width: 750px; margin: 0 auto;">
-                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">Image description:</p>
+                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">画像説明文:</p>
                     <div id="description-block-background" style="max-width: 650px; margin: 0 auto 8px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; text-align: left; user-select: text;"></div>
                     <label style="display:block; max-width: 650px; margin: 0 auto 10px; text-align:left;">
                         <input type="checkbox" id="na-background" />
-                        The description does not mention or describe the background.
+                        説明文では、背景について言及または説明されていません。
                     </label>
 
                     <p style="max-width: 650px; margin: 0 auto 10px; text-align: left; font-style: italic; color: #777; font-size: 15px; line-height: 1.4;">
-                        Note: The background is everything else occurring in the scene that provides context and setting. Things that can not be directly observed from the image do not count as background.
+                        注：背景とは、画像内の場面に文脈や状況を与える、主要な被写体／対象物以外の要素を指します。画像から直接観察できないものは、背景には含まれません。
                     </p>
-                    <button id="add-selection-background" type="button" style="margin-bottom: 8px;">Add highlighted text</button>
+                    <button id="add-selection-background" type="button" style="margin-bottom: 8px;">ハイライトしたテキストを追加してください</button>
                     <ul id="selection-list-background" style="text-align: left; max-width: 650px; margin: 0 auto; padding-left: 20px; box-sizing: border-box;"></ul>
                 </div>
 
                 <div id="phase-4-panel" style="display:none; max-width: 750px; margin: 0 auto;">
-                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">Review description:</p>
+                    <p style="font-size: 14px; color: #555; max-width: 650px; margin: 0 auto 8px; text-align: left;">説明文を確認してください：</p>
                     <div id="description-block-review" style="max-width: 650px; margin: 0 auto 8px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; text-align: left; user-select: text;"></div>
                     <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-                        <button id="add-review-focal" type="button" style="margin: 8px 0;">Add as main object-related</button>
-                        <button id="add-review-background" type="button" style="margin: 8px 0;">Add as background-related</button>
+                        <button id="add-review-focal" type="button" style="margin: 8px 0;">主要な対象物に関連する部分として追加する</button>
+                        <button id="add-review-background" type="button" style="margin: 8px 0;">背景に関連する部分として追加する</button>
                     </div>
-                    <p style="font-size: 14px; color: #555;">Additional main object-related selections:</p>
+                    <p style="font-size: 14px; color: #555;">追加で選択した主要な対象物に関連する部分：</p>
                     <ul id="selection-list-review-focal" style="text-align: left; max-width: 650px; margin: 0 auto; padding-left: 20px; box-sizing: border-box;"></ul>
-                    <p style="font-size: 14px; color: #555;">Additional background-related selections:</p>
+                    <p style="font-size: 14px; color: #555;">追加で選択した背景に関連する部分：</p>
                     <ul id="selection-list-review-background" style="text-align: left; max-width: 650px; margin: 0 auto; padding-left: 20px; box-sizing: border-box;"></ul>
                     <label style="display:block; max-width: 650px; margin:10px auto 0; text-align:left;">
                         <input type="checkbox" id="review-complete" />
-                        All related descriptions are highlighted, and the remaining texts are neither main object-related nor background-related.
+                        関連する説明はすべてハイライト済みであり、残りのテキストは主要な被写体／対象物にも背景にも関連していません。
                     </label>
                 </div>
 
-                <button id="next">Continue</button>
-                <p id="error" class="help-text" style="display: none;">Please complete this step before continuing.</p>
+                <button id="next">次へ</button>
+                <p id="error" class="help-text" style="display: none;">続行する前に、このステップを完了してください。</p>
             </div>
         </script>
 
@@ -198,25 +198,25 @@
             <form>
             <section class="text-container">
                 <div style="margin: 16px 0;">
-                    <p style="margin: 0; max-width: none;">What is your country of residence? <span style="color: red;">*</span></p>
+                    <p style="margin: 0; max-width: none;">現在お住まいの国はどちらですか？ <span style="color: red;">*</span></p>
                     <ul class="mc-list" style="font-size: 15px; line-height: 27px; font-family: 'Lato','Noto Sans', sans-serif; margin-top: 6px;">
-                        <li><label><input type="radio" name="country" value="us" required /> the U.S.</label></li>
-                        <li><label><input type="radio" name="country" value="jp" /> Japan</label></li>
-                        <li><label><input type="radio" name="country" value="other" /> Other (Please Specify)</label> <input type="text" id="country_other" style="max-width: 300px; margin-left: 10px;" /></li>
+                        <li><label><input type="radio" name="country" value="us" required /> アメリカ合衆国</label></li>
+                        <li><label><input type="radio" name="country" value="jp" /> 日本</label></li>
+                        <li><label><input type="radio" name="country" value="other" /> その他 (具体的に指定してください)</label> <input type="text" id="country_other" style="max-width: 300px; margin-left: 10px;" /></li>
                     </ul>
                 </div>
 
                 <div style="margin: 16px 0;">
-                    <p style="margin: 0; max-width: none;">What language(s) do you speak at home? Please select all that apply. <span style="color: red;">*</span></p>
+                    <p style="margin: 0; max-width: none;">ご家庭で話している言語は何ですか？該当するものをすべて選択してください。 <span style="color: red;">*</span></p>
                     <ul class="mc-list" style="font-size: 15px; line-height: 27px; font-family: 'Lato','Noto Sans', sans-serif; margin-top: 6px;">
-                        <li><label><input type="checkbox" name="native_lang" value="en" /> English</label></li>
-                        <li><label><input type="checkbox" name="native_lang" value="jp" /> Japanese</label></li>
-                        <li><label><input type="checkbox" name="native_lang" value="other" /> Other (Please Specify)</label> <input type="text" id="native_lang_other" style="max-width: 300px; margin-left: 10px;" /></li>
+                        <li><label><input type="checkbox" name="native_lang" value="en" /> 英語</label></li>
+                        <li><label><input type="checkbox" name="native_lang" value="jp" /> 日本語</label></li>
+                        <li><label><input type="checkbox" name="native_lang" value="other" /> その他 (具体的に指定してください)</label> <input type="text" id="native_lang_other" style="max-width: 300px; margin-left: 10px;" /></li>
                     </ul>
                 </div>
             </section>
 
-            <p id="error" class="help-text" style="display: none; color: red; text-align: center; margin: 20px auto; max-width: 650px;">Please answer all required questions before continuing.</p>
+            <p id="error" class="help-text" style="display: none; color: red; text-align: center; margin: 20px auto; max-width: 650px;">続行する前に、このステップを完了してください。</p>
             {{# buttonText }}
             <button id="next">{{ buttonText }}</button>
             {{/ buttonText }}
@@ -236,12 +236,12 @@
             <form>
             <section class="text-container">
                 <div style="margin: 16px 0;">
-                <p style="margin: 0; max-width: none;">What is your gender? <span style="color: red;">*</span></p>
+                <p style="margin: 0; max-width: none;">性別はどちらですか？ <span style="color: red;">*</span></p>
                 <ul class="mc-list" style="font-size: 15px; line-height: 27px; font-family: 'Lato','Noto Sans', sans-serif; margin-top: 6px;">
-                    <li><label><input type="radio" name="gender" value="female" required /> Female</label></li>
-                    <li><label><input type="radio" name="gender" value="male" /> Male</label></li>
-                    <li><label><input type="radio" name="gender" value="nonbinary" /> Non-binary</label></li>
-                    <li><label><input type="radio" name="gender" value="other" /> Other (Please Specify)</label> <input type="text" id="gender_other" style="max-width: 300px; margin-left: 10px;" /></li>
+                    <li><label><input type="radio" name="gender" value="female" required /> 女性</label></li>
+                    <li><label><input type="radio" name="gender" value="male" /> 男性</label></li>
+                    <li><label><input type="radio" name="gender" value="nonbinary" /> 非二項</label></li>
+                    <li><label><input type="radio" name="gender" value="other" /> その他 (具体的に指定してください)</label> <input type="text" id="gender_other" style="max-width: 300px; margin-left: 10px;" /></li>
                 </ul>
                 </div>
 
@@ -305,7 +305,7 @@
             <h1 class="thanks-message nodisplay">{{ thanksMessage }}</h1>
             {{/ thanksMessage }}
             {{^ thanksMessage }}
-            <h1 class="thanks-message nodisplay">Thank you for taking part in this experiment!</h1>
+            <h1 class="thanks-message nodisplay">本実験にご参加いただき、ありがとうございました！</h1>
             {{/ thanksMessage }}
             {{# extraMessage }}
             <h2 class="extra-message nodisplay">{{{ extraMessage }}}</h2>
